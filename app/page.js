@@ -29,22 +29,28 @@ export default function Home() {
   }
   return (
     <div className={styles.page}>
-      <div>
-        <input type="text" placeholder="name" value={data.name} name="name" onChange={handleChange}/>
+      <div className={styles.form}>
+        
+      <h2 className={styles.heading}>First Next.js App</h2>
+      <br/>
+        <input type="text" placeholder="name" value={data.name} name="name" onChange={handleChange} className={styles.inp}/>
         <br/>
-        <input type="text" placeholder="age" value={data.age} name="age" onChange={handleChange}/>
+        <input type="text" placeholder="age" value={data.age} name="age" onChange={handleChange} className={styles.inp}/>
         <br/>
-        <input type="text" placeholder="email" value={data.email} name="email" onChange={handleChange}/>
-      </div>
+        <input type="text" placeholder="email" value={data.email} name="email" onChange={handleChange} className={styles.inp}/>
+      <br/>
       <button
         onClick={handleSubmit}
+        className={styles.button}
       >save the data</button>
       <br/>
       <button
+      className={styles.button}
         onClick={() => {
           router.push("./Home");
         }}
       >go to all data</button>
+      </div>
     </div>
   );
 }
