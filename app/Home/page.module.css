@@ -1,6 +1,6 @@
 .page{
   border: 2px solid white;
-  height: 100vh;
+  height: 100dvh;
   overflow: auto;
   padding: 20px;
 }
